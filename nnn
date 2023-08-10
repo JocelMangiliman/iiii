@@ -1,0 +1,18 @@
+# the user will input their  grade 
+pgrade = float(input("Enter prelim grade: "))
+mgrade = float(input("Enter midterms grade: "))
+fgrade = float(input("Enter final grade: "))
+
+# this will calculate the average grade of a students using the formula average is equals to prelim grade x 0.3 + midterm gradex 0.3 + final grade but this time x 0.4
+ave = pgrade * 0.3 + mgrade * 0.3 + fgrade * 0.4
+
+
+if ave >= 50:
+    remarks = "PASSED"
+    
+elif ave <= 49:
+    remarks = "FAILED"
+    
+    # this line will then display the average grade of the student 
+print("The average grade is:", ave)
+print ("You are:" , remarks )
